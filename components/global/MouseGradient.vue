@@ -36,8 +36,8 @@ onUnmounted(() => {
 <style scoped>
 .follower {
   position: absolute;
-  width: 300px; /* Adjust size as needed */
-  height: 300px;
+  width: 350px; /* Adjust size as needed */
+  height: 350px;
   pointer-events: none; /* Prevent the div from interfering with mouse events */
   transform: translate(-50%, -50%); /* Center the image on the cursor */
 }
