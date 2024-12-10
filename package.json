@@ -23,6 +23,7 @@
     "@uploadcare/file-uploader": "^1.6.0",
     "@yeger/vue-masonry-wall": "^5.0.15",
     "chart.js": "^4.4.3",
+    "gsap": "^3.12.5",
     "netlify-cms-media-library-uploadcare": "^0.5.10",
     "nuxt-lazy-load": "^3.0.4",
     "tailwindcss-animate": "^1.0.7",

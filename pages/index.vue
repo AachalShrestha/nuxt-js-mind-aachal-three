@@ -41,7 +41,7 @@ onMounted(async () => {
     </div>
 
     <!-- Main Content -->
-    <div v-else class="h-screen relative">
+    <div v-else class="relative">
       <!-- Background -->
 <!--       <div
         class="absolute inset-0 bg-cover bg-center"
@@ -54,21 +54,22 @@ onMounted(async () => {
       </div>
 
       <!-- Title Section -->
-      <div class="title-container flex justify-center content-center h-screen">
+      <div class="title-container flex justify-center content-center bg">
         <div class="h-0">
             <h1 class="text-8xl font-bold mt-[20%]">
               {{ generalSettings?.site_title || "Default Title" }}
             </h1>
         </div>
       </div>
-
       <!-- Background Layer -->
 <!--       <div class="absolute bottom-0 left-0 w-full h-[100vh] bg-[#F7DCE4]" style="z-index: -1;"></div> -->
+<TrailImg />
     </div>
 
     <!-- Load pages -->
 	<WorksTable />
   </div>
+  
 </template>
 
 <style>

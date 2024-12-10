@@ -11,7 +11,7 @@
   font-style: normal;
 }
 
-.text-8xl.font-bold {
+.text-8xl.font-bold, h1 {
   font-family: 'DirtyLine', sans-serif;
   /* color: #B04C6C; */
   color: black;

@@ -1,16 +1,20 @@
 <template>
-  <div>
-    <ul 
-      v-for="post in folders"
-      :key="post.slug"
+  <ul>
+    <li 
+      v-for="post in folders" 
+      :key="post.slug" 
+      class="pb-1 md:pb-2 lg:pb-3"
+    >
+      <NuxtLink 
+        :to="post._path" 
+        class="font-bold text-2xl lg:text-2xl xl:text-2xl"
       >
-      <NuxtLink :to="post._path" >
-          <li class="">{{ post.title }}</li>
+        {{ post.title }}
       </NuxtLink>
-    </ul>
-    <hr>
-  </div>
+    </li>
+  </ul>
 </template>
+
   
   <script setup>
   import { ref, onMounted } from 'vue';
