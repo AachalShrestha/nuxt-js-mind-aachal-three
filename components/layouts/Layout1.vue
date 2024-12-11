@@ -5,8 +5,18 @@
       <div class="pr-5 z-100">
         <Drawer />
       </div>
+      <div class="mb-10 container back-button">
+      <NuxtLink :to="`/`">
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+            <path fill="currentColor" d="m6.921 12.5l5.793 5.792L12 19l-7-7l7-7l.714.708L6.92 11.5H19v1z"></path>
+          </svg>
+        </span>  
+        <span class="text-xs">Back</span>
+      </NuxtLink>
+    </div>
       <div class="container">
-        <h1 class="text-3xl mb-4 md:text-3xl lg:text-6xl lg:mb-6 font-bold ">{{ data.title }}</h1>
+        <h1 class="text-xl mb-4 md:text-3xl lg:text-6xl lg:mb-6 font-bold ">{{ data.title }}</h1>
         <p v-if="data.description" class="text-lg md:text-2xl lg:text-xl pb-10 font-bold">
   {{ data.description }}
 </p>

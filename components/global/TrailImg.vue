@@ -129,6 +129,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: -100;
 }
 
 .content__title {
