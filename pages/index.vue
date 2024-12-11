@@ -54,9 +54,9 @@ onMounted(async () => {
       </div>
 
       <!-- Title Section -->
-      <div class="title-container flex justify-center content-center bg mt-[35vh]">
+      <div class="title-container flex justify-center content-center bg">
         <div class="h-0">
-            <h1 class=" text-6xl lg:text-8xl font-bold">
+            <h1 class=" text-6xl lg:text-8xl font-bold mt-[35vh]">
               {{ generalSettings?.site_title || "Default Title" }}
             </h1>
         </div>
