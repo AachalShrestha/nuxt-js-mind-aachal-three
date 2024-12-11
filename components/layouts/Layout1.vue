@@ -16,15 +16,16 @@
       </NuxtLink>
     </div>
       <div class="container">
-        <h1 class="text-xl mb-4 md:text-3xl lg:text-6xl lg:mb-6 font-bold ">{{ data.title }}</h1>
-        <p v-if="data.description" class="text-lg md:text-2xl lg:text-xl pb-10 font-bold">
+        <h1 class="text-2xl mb-4 md:text-3xl lg:text-6xl lg:mb-6 font-bold ">{{ data.title }}</h1>
+       <!--  <p v-if="data.description" class="text-lg md:text-2xl lg:text-xl pb-10 font-bold">
   {{ data.description }}
-</p>
+</p> -->
       <article v-if="data.tags" class="tags">
-        <ul class="flex gap-x-2.5">
+        <ul class="flex gap-x-2.5 flex-wrap">
           <li
             v-for="(item, index) in data.tags"
             :key="index"
+            class="mb-4"
           >
             <NuxtLink :to="`/tags/${item}`" class="p-8 text-xs border border-black hover:border-red-800 transition-all duration-100 rounded-full px-2 py-1">
               {{ item }}
