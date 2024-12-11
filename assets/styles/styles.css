@@ -7,13 +7,13 @@
     margin-left: auto;
     margin-right: auto;
 }
-p{
+/* p{
     margin-top: .5em;
-}
+} */
 hr{
     border-bottom: 1px solid #ccc;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 0.6em;
 }
 ul, li {
     list-style: none;

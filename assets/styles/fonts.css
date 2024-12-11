@@ -11,16 +11,31 @@
   font-style: normal;
 }
 
-.text-8xl.font-bold, h1 {
+.light-mode.text-8xl.font-bold, h1 {
   font-family: 'DirtyLine', sans-serif;
   /* color: #B04C6C; */
   color: black;
 }
 
-a, p{
+.dark-mode.text-8xl.font-bold, h1 {
+  font-family: 'DirtyLine', sans-serif;
+  /* color: #B04C6C; */
+  color: black;
+}
+
+a, p, li{
   font-family: "Poppins", serif;
   font-weight: 300;
   font-style: normal;
+}
+
+.about-content h3{
+  font-family: 'DirtyLine', sans-serif;
+  font-size: 24px;
+}
+
+.text-2xl.mb-4 p{
+  font-weight: 400;
 }
 .montserrat-bold {
   font-family: "Montserrat", sans-serif;

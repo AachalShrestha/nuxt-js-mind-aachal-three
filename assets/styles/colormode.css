@@ -19,6 +19,11 @@ body {
     background-color: #161715;
     color: #ebf4f1;
     }
+
+    .dark-mode h1{
+        background-color: #161715;
+        color: #ebf4f1;
+    }
     .dark-mode .backcolor{
         background-color: #161715;
     }

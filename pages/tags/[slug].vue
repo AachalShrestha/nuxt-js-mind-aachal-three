@@ -15,11 +15,12 @@ useHead({
 </script>
 
 <template>
+<div>
+  <Drawer />
 <div class="container mt-10 mb-20">
   <div>
-      <Drawer />
     </div>
-    <div class="text-xl font-bold mb-5">All objects from the collection with the tag "{{ slug }}"</div>
+    <div class="text-xl mb-8 lg:text-3xl lg:mb-6 font-bold5"><p>Works with the tag "{{ slug }}"</p></div>
     <section class="page-section">
       <!-- Render list of all articles in ./content/blog using `path` -->
       <!-- Provide only defined fieldsin the `:query` prop -->
@@ -42,7 +43,7 @@ useHead({
               <NuxtLink :to="article._path">
 
                     <h1 class="text-2xl font-bold">{{ article.title }}</h1>
-                    <p>{{ article.description }}</p>
+                    <p m-0>{{ article.description }}</p>
                     <ul class="article-tags">
 
                     </ul>
@@ -59,6 +60,7 @@ useHead({
       </ContentList>
     </section>
 </div>  
+</div>
 </template>
 
 <style scoped>
@@ -66,5 +68,8 @@ li {
 list-style: none;
 display: inline-block;
 padding: 4px;
+}
+p{
+  margin: 0;
 }
 </style>
