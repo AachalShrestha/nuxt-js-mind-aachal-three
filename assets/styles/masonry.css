@@ -16,13 +16,13 @@
 }
 .masonry-image {
   break-inside: avoid;
-  transition: filter 0.3s ease-in-out;
-  opacity: 0.5;
+/*   transition: filter 0.3s ease-in-out;
+  opacity: 0.5; */
 }
 
 .masonry-image:hover {
-  opacity: 1;
-  filter: blur(0) ;
+/*   opacity: 1;
+  filter: blur(0) ; */
 }
 
 .loader {
