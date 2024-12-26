@@ -70,4 +70,13 @@ hr {
 .dark-mode .el-collapse-item__header {
   color: white !important; /* Change to your desired color */
 }
+
+.dark-mode .el-collapse-item__wrap{
+  background-color: transparent;
+  color: white;
+}
+
+.dark-mode a{
+  color: white;
+}
 </style>
