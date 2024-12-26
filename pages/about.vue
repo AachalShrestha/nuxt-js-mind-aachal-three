@@ -27,7 +27,9 @@
         <!-- Title Section -->
         <div class="title-container flex justify-evenly items-center pt-4">
             <div class="flex flex-wrap justify-evenly items-center w-full max-w-6xl px-4">
-              <img src="../public/img/PF_IMG.png" class="pf-img">
+                <div>
+                  <NuxtImg :src="imgSrc" class="pf-img" alt="pf img" loading="lazy"/>
+                </div>
               <div class="w-90 lg:w-[50%]">
                 <h1 class="text-8xl font-bold mb-4">
                   {{ aboutSettings?.site_title || "About Meeee" }}
@@ -109,7 +111,7 @@
               <div class="about-content-container flex gap-12 flex-wrap">
                 <div class="about-content-item">
                   <p class="font-medium">Crocheting</p>
-                  <p>During Covid, I stumbled upon a ball of yarn and a crochet hook that had been sitting untouched in my room. Bored and looking for something to do, I decided to learn the basic stitches—and I haven't stopped since. Crocheting has become a way for me to relieve stress, and it's also taught me the value of patience.</p>
+                  <p>During Covid, I stumbled upon a ball of yarn and a crochet hook that had been sitting untouched in my room. Bored and looking for something to do, I decided to learn the basic stitches—and I haven't stopped since. </p>
                 </div>
                 <div class="about-content-item">
                   <p class="font-medium">Video editing and Motion Graphics</p>
@@ -117,13 +119,13 @@
                 </div>
                 <div class="about-content-item">
                   <p class="font-medium">Dancing and filming</p>
-                  <p>From a young age, I’ve been passionate about dance. It all began with mimicking dance moves from TV, which soon led to my introduction to Traditional Nepali Dance. My cousins and I would often perform at local parties, a tradition I still occasionally practice today. Over time, I also developed an interest in K-pop dance covers and even formed a group with some friends. Sometimes, I film and edit our dance videos.</p>
+                  <p>From a young age, I’ve been passionate about dance. It all began with mimicking dance moves from TV, which soon led to my introduction to Traditional Nepali Dance. Over time, I also developed an interest in K-pop dance covers and even formed a group with some friends. Sometimes, I film and edit our dance videos.</p>
                 </div>
               </div>
           </div>
           <div class="mt-14">
               <h3>Special mentions</h3>
-              <p>Every year, the second-year students in our program organize an award show where both the public and professors select the winners.</p>
+              <p class="max-w-[70%]">Every year, the second-year students in our program organize an award show where both the public and professors select the winners.</p>
               <div class="about-content-container flex gap-12 flex-wrap mt-10">
                 <div class="about-content-item">
                   <p class="font-medium">Impact award</p>
@@ -134,7 +136,7 @@
                   <p>An award I received in my first year. This award was given to one the best first year projects.</p>
                 </div>
                 <div class="about-content-item">
-                  <img src="../public/img/award.jpg">
+                  <img src="../public/img/award.jpg" class="h-[300px]">
                 </div>
               </div>
           </div>
@@ -150,13 +152,16 @@
 </template>
 <script setup>
 import { ref, onMounted } from "vue";
+import ColorMode from "~/components/ColorMode.vue";
 
+const colorMode = useColorMode()
 
 // State variables
 const aboutSettings = ref(null);
 const isLoading = ref(true);
 const hasError = ref(false);
 
+const imgSrc = ref("/img/PF_IMG_BLACK.png")
 // Fetch JSON data on mount
 onMounted(async () => {
   try {
@@ -173,6 +178,19 @@ onMounted(async () => {
     console.error("Error loading about settings:", error);
   }
 });
+
+watch(
+  () => colorMode.preference,
+  (newMode) => {
+    if(newMode == "light"){
+    imgSrc.value = "/img/PF_IMG_BLACK.png";
+    }else{
+      imgSrc.value = "/img/PF_IMG_WHITE.png";
+    }
+    console.log(imgSrc)
+  }
+);
+
 </script>
 
 <style>
@@ -189,4 +207,20 @@ onMounted(async () => {
 .about-content-item p, li{
   font-size: 14px;
 }
+
+/* .pf-img {
+  width: 300px;
+  height: 300px;
+  background-image: url('../public/img/PF_IMG_BLACK.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.light-mode .pf-img {
+  background-image: url('../public/img/PF_IMG_BLACK.png');
+}
+
+.dark-mode .pf-img {
+  background-image: url('../public/img/PF_IMG_WHITE.png');
+} */
 </style>
