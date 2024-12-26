@@ -2,9 +2,9 @@
     <div class="opacity-80 animate-fade animate-once animate-delay-[100ms]">
       <div
       class="text-2xl font-bold">
-      {{ settings.site_title }}</div>
+      <h3>{{ settings.site_title }}</h3></div>
       <div class="text-sm opacity-80">
-      {{ settings.site_subtitle }}
+      <p>{{ settings.site_subtitle }}</p>
       </div>
     </div>
   </template>

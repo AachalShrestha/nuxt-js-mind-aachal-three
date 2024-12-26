@@ -6,7 +6,7 @@
 
         <!-- Dropdown -->
         <el-collapse v-model="activePanels" accordion>
-          <el-collapse-item title="Works" name="1" class="custom-collapse-item">
+          <el-collapse-item title="Works" name="1" class="custom-collapse-item works-nav">
             <MainNavigation />
           </el-collapse-item>
         </el-collapse>
@@ -65,5 +65,9 @@ hr {
   font-size: 32px;
   font-weight: 600;
   border-style: none;
+}
+
+.dark-mode .el-collapse-item__header {
+  color: white !important; /* Change to your desired color */
 }
 </style>

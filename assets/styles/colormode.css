@@ -21,9 +21,21 @@ body {
     }
 
     .dark-mode h1{
-        background-color: #161715;
         color: #ebf4f1;
     }
+
+    .dark-mode.footer-item p,h1{
+        color: #161715;
+    }
+    .dark-mode.el-collapse-item__header{
+        color: white !important;
+        background-color: #161715;
+    }
+
+    .dark-mode el-collapse-item{
+        color: white !important;
+    }
+
     .dark-mode .backcolor{
         background-color: #161715;
     }
@@ -55,13 +67,13 @@ body {
  /*    .router-link-active {
     border-bottom: 1px solid rgba(50, 64, 63, 0.2);
     } */
-    .dark-mode .router-link-active {
+ /*    .dark-mode .router-link-active {
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     }
     .gray-mode .router-link-active {
     border-bottom: 1px solid rgba(207, 207, 207, 0.5);
-    }
-    /* input */
+    } */
+    input
     textarea,
     input, select{
     padding:.5em;
