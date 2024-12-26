@@ -4,10 +4,10 @@ title: Brandguidelines
 date: 2024-10-03T13:10:35.858Z
 tags:
   - Graphic Design
-  - Indesign
+  - InDesign
   - Illustrator
 layoutpage: layout1
-description: Brand guidelines made for OctoSales
+description: This brandguidelines was made for OctoSales during my internship there.
 imagegallery:
   showgallery: true
   carouselgrid: grid
@@ -19,6 +19,7 @@ imagegallery:
 thumbnail: /img/brandguidelines-1.png
 included: true
 promoted: "0"
+
 ---
 
 <template>

@@ -17,7 +17,8 @@ thumbnail: /img/tdmovieout.0.gif
 date: 2024-11-17T14:29:57.955Z
 numbernavigation: 1
 layoutpage: layout1
-promoted: "0"
+description:  I explored the potential impacts of phone radiation on female fertility, drawing from animal studies. The final visual is a point cloud model shaped like a uterus, created from flower images, symbolizing female sexuality.
+promoted: "0" 
 ---
 <template>
   <div class="chicken-swag-container">

@@ -7,6 +7,8 @@ tags:
   - Interactive
   - TouchDesigner
   - Installation
+  - Graphic Design
+  - Web
 layoutpage: layout1
 imagegallery:
   showgallery: true
@@ -19,6 +21,7 @@ imagegallery:
     - /img/majipa-7.gif
 thumbnail: /img/majipa-main.png
 included: true
+desription: An immersive installation that explores the Majipa Lakhey dance, a key element of Kathmandu's cultural heritage. My bachelor's thesis aimed to reconnect Nepali youth abroad with their traditions and raise global awareness. 
 promoted: "0"
 ---
 

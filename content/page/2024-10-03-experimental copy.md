@@ -2,11 +2,10 @@
 layout: default
 title: Technology experiments
 date: 2024-10-03T13:10:35.858Z
-description: Playing around with TouchDesigner and interactive inputs
 tags:
   - Interactive
   - TouchDesigner
-  - Datavisualisation
+  - Unity
 layoutpage: layout1
 imagegallery:
   showgallery: true
@@ -15,8 +14,9 @@ imagegallery:
     - /img/sprint-2-sitar.gif
     - /img/sprint-2-visual.gif
     - /img/sprint-1.gif
-thumbnail: /img/sprint-1.gif
+thumbnail: /img/sprint-1.gif  # You can keep this here, but make sure it's not duplicated
 included: true
+description: In my "expert lab" class, I experimented with Leap Motion and Kinect to create interactive visuals. I used Kinect with MediaPipe for real-time reactive visuals and Leap Motion to design a virtual instrument in Ableton Live and TouchDesigner.
 promoted: "0"
 ---
 

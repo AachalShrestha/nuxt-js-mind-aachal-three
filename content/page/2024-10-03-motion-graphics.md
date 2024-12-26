@@ -16,13 +16,14 @@ imagegallery:
     - /img/img-3.png
     - /img/main-4.jpg
 thumbnail: /img/img-3.png
+description: This a short animation made for OctoSales to explain what the company does.
 included: true
 promoted: "0"
 ---
 
 <template>
   <div class="chicken-swag-container">
-    <p>This a short animation made for OctoSales to explain what the company does.</p>
+    <p>This a short animation made for OctoSales to explain what the company does. I made this during my internship there.</p>
     <MyComponent />
     <SearchBox />
   </div>

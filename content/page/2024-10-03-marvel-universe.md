@@ -3,8 +3,8 @@ layout: default
 title: Marvel Universe
 date: 2024-10-03T13:10:35.858Z
 tags:
-  - Datavisualistation
-  - Graphic Desoign
+  - Datavisualisation
+  - Graphic Design
 layoutpage: layout1
 imagegallery:
   showgallery: true
@@ -13,6 +13,7 @@ imagegallery:
     - /img/artboard-11-copy.png
 thumbnail: /img/artboard-11-copy.png
 included: true
+description: This project involved creating a poster from data on Marvel heroes and villains, focusing on the distinct attributes of villains like gender, eye color, and unique traits. Inspired by Ikko Tanaka’s geometric design style, I simplified complex data into clear, impactful visuals. 
 promoted: "0"
 ---
 

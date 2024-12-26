@@ -8,7 +8,6 @@ tags:
   - VFX
   - Motion Graphics
 layoutpage: layout1
-description: Projection mapping at the MASK festival
 imagegallery:
   showgallery: true
   carouselgrid: grid
@@ -20,6 +19,7 @@ imagegallery:
     - /img/main-4.jpg
 thumbnail: /img/mask-main.png
 included: true
+description: This projection mapping project showcases Mario's journey through the evolution of gaming, from Donkey Kong to modern games, highlighting advancements in technology. Created for the 2023 MASK Video Mapping Festival, we used After Effects for animation, sprite-based techniques for Mario's movements, and Illustrator for assets, aligning everything with the Tomas Bata University building.
 promoted: "0"
 ---
 
