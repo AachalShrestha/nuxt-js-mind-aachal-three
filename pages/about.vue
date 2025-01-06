@@ -161,7 +161,7 @@ const aboutSettings = ref(null);
 const isLoading = ref(true);
 const hasError = ref(false);
 
-const imgSrc = ref("/img/PF_IMG_BLACK.png")
+const imgSrc = ref(null)
 // Fetch JSON data on mount
 onMounted(async () => {
   try {
@@ -169,6 +169,12 @@ onMounted(async () => {
 
     if (!response.ok) {
       throw new Error("Failed to fetch about settings");
+    }
+
+    if(colorMode.preference == "light"){
+      imgSrc.value = "/img/PF_IMG_BLACK.png"
+    }else {
+      imgSrc.value = "/img/PF_IMG_WHITE.png"
     }
 
     aboutSettings.value = await response.json();
