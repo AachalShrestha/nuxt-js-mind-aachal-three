@@ -60,6 +60,7 @@ useHead({
       </ContentList>
     </section>
 </div>  
+<MouseGradient />
 </div>
 </template>
 
