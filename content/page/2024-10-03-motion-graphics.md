@@ -18,6 +18,7 @@ imagegallery:
 thumbnail: /img/img-3.png
 description: This a short animation made for OctoSales to explain what the company does.
 included: true
+link: https://youtu.be/drnrkLBYSIg
 promoted: "0"
 ---
 

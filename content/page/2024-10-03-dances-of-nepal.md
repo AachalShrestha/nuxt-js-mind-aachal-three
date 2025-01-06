@@ -19,6 +19,7 @@ date: 2024-11-17T14:29:57.955Z
 numbernavigation: 1
 layoutpage: layout1
 description: A digital archive to preserve and showcase traditional Nepali dances, which are at risk of disappearing. Developed as a prototype for my WEB 2 class, it allows users to explore detailed information about various dances and create their own routines. 
+link: https://ehb-mct.github.io/web-2-frontend-22-23-AachalShrestha/index.html
 promoted: "0"
 ---
 

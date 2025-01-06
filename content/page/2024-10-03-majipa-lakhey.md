@@ -22,6 +22,7 @@ imagegallery:
 thumbnail: /img/majipa-main.png
 included: true
 desription: An immersive installation that explores the Majipa Lakhey dance, a key element of Kathmandu's cultural heritage. My bachelor's thesis aimed to reconnect Nepali youth abroad with their traditions and raise global awareness. 
+link: https://youtu.be/r9eecNWFF90
 promoted: "0"
 ---
 

@@ -27,7 +27,7 @@
             :key="index"
             class="mb-4"
           >
-            <NuxtLink :to="`/tags/${item}`" class="p-8 text-xs border border-black hover:border-red-800 transition-all duration-100 rounded-full px-2 py-1">
+            <NuxtLink :to="`/tags/${item}`" class="p-8 text-xs border button hover:border-pink-400 transition-all duration-100 rounded-full px-2 py-1">
               {{ item }}
             </NuxtLink>
           </li>
@@ -36,6 +36,11 @@
 
 
         <ContentRenderer :value="data" class="mt-6 md:mt-4" />
+        <div class="link-button mt-4" v-if="data.link">
+          <NuxtLink :to="data.link" class="p-1 px-2 border border-solid rounded-full button hover:border-pink-400">
+            {{ data.link.includes('youtu') ? 'Watch Video' : 'Visit Website' }}
+          </NuxtLink>
+        </div>
 
         <div v-if="data.imagegallery && data.imagegallery.showgallery == true" class="pt-10 pb-20">
             <ImageGallery />
@@ -47,7 +52,7 @@
         </div>
       </div>
       <ShareButtons />
-    
+      <MainFooter />
       <!-- SEO metadata -->
       <!-- Regular Meta Tags -->
       <Title>{{ data.title }}</Title>
@@ -69,3 +74,12 @@
   defineProps(['data', 'formatDate']);
   </script>
   
+<style>
+  .dark-mode.button{
+    border: white;
+  }
+
+  .light-mode.button{
+    border: black;
+  }
+</style>
