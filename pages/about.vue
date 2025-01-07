@@ -3,7 +3,7 @@
     <MouseGradient />
     <!-- Loading State -->
     <div v-if="isLoading" class="flex items-center justify-center h-screen">
-      <p>Loading...</p>
+      <NuxtImg :src="imgSrc" class="pf-img" alt="pf img" loading="lazy"/>
     </div>
 
     <!-- Error State -->
@@ -161,8 +161,15 @@ const aboutSettings = ref(null);
 const isLoading = ref(true);
 const hasError = ref(false);
 
-const imgSrc = ref(null)
+const loaderWhite = "img/loader-white-3.gif"
+const loaderBlack = "img/loader-black-3.gif"
+
+const imgSrc = ref(colorMode.preference === "light" ? loaderBlack : loaderWhite);
 // Fetch JSON data on mount
+onBeforeMount(() => {
+  imgSrc.value = colorMode.preference === "dark" ? loaderWhite : loaderBlack;
+});
+
 onMounted(async () => {
   try {
     const response = await fetch("/_data/about.json");

@@ -1,13 +1,22 @@
 <script setup>
 import { ref, onMounted } from "vue";
-
+const colorMode = useColorMode()
 // Fetch JSON files
 const homepageSettings = ref(null);
 const generalSettings = ref(null);
 const isLoading = ref(true);
 const hasError = ref(false);
 
+const loaderWhite = "img/loader-white-3.gif"
+const loaderBlack = "img/loader-black-3.gif"
+
+const imgSrc = ref(colorMode.preference === "dark" ? loaderWhite : loaderBlack);
+console.log(colorMode.preference)
 // Fetch and load settings
+onBeforeMount(() => {
+  imgSrc.value = colorMode.preference === "dark" ? loaderWhite : loaderBlack;
+});
+
 onMounted(async () => {
   try {
     const homepageResponse = await fetch("/_data/homepage.json");
@@ -24,7 +33,26 @@ onMounted(async () => {
     hasError.value = true;
     console.error("Error loading settings:", error);
   }
+
+  if(colorMode.preference == "light"){
+      imgSrc.value = loaderBlack
+    }else {
+      imgSrc.value = loaderWhite
+    }
 });
+
+watch(
+  () => colorMode.preference,
+  (newMode) => {
+    if(newMode == "light"){
+    imgSrc.value = loaderBlack;
+    }else{
+      imgSrc.value = loaderWhite;
+    }
+    console.log(imgSrc)
+  }
+);
+
 </script>
 
 <template>
@@ -32,7 +60,7 @@ onMounted(async () => {
     <MouseGradient />
     <!-- Loading State -->
     <div v-if="isLoading" class="flex items-center justify-center h-screen">
-      <p>Loading...</p>
+      <NuxtImg :src="imgSrc" class="pf-img" alt="pf img" loading="lazy"/>
     </div>
 
     <!-- Error State -->
