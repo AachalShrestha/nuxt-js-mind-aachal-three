@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full bg-[#e4a8c4] mt-16">
+  <div class="w-full bg-[#e4a8c4] mt-16 footer">
     <div class="p-16 flex justify-evenly flex-wrap gap-10">
       <div class="footer-item">
         <p>Thank you for reviewing my</p>
@@ -33,4 +33,13 @@
   .footer-item{
     width: 250PX;
   }
+
+  .dark-mode.footer-item{
+    color: black;
+  }
+
+  .light-mode.footer{
+    color: white;
+  }
+
 </style>
