@@ -24,6 +24,10 @@ body {
         color: #ebf4f1;
     }
 
+    .dark-mode.footer h1{
+        color: #161715;
+    }
+
     .dark-mode.footer-item p,h1{
         color: #161715;
     }

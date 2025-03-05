@@ -1,6 +1,6 @@
 <template>
   <div class="w-full bg-[#e4a8c4] mt-16 footer">
-    <div class="p-16 flex justify-evenly flex-wrap gap-10">
+    <div class="p-16 flex justify-evenly flex-wrap gap-10 footer">
       <div class="footer-item">
         <p>Thank you for reviewing my</p>
         <h1 class="text-3xl mt-2">Portfolio</h1>
