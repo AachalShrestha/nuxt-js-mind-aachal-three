@@ -77,9 +77,9 @@
                 <div class="about-content-item">
                   <p class="font-medium">Interactive & Digital Design</p>
                   <ul>
-                    <li>Interactive Design (TouchDesigner, Unity, Resolume, MadMapper, Unreal, Ableton Live)</li>
+                    <li>Interactive Design (TouchDesigner, Unity, Resolume, MadMapper, Ableton Live)</li>
                     <li>Projection Mapping</li>
-                    <li>3D modeling & animation (Blender, Maya)</li>
+                    <li>3D modeling & animation (Blender)</li>
                     <li>Front-End Development (HTML, CSS, JavaScript)</li>
                     <li>UX/UI Design</li>
                   </ul>
