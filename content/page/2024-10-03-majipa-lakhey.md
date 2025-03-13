@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Majipa Lakhey
+title: Majipa Lakhey Installation
 date: 2024-10-03T13:10:35.858Z
 description: An interactive installation to discover the story of the Majipa Lakhey
 tags:
