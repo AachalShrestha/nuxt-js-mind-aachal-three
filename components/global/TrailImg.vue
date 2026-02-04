@@ -34,10 +34,10 @@
   //IMAGES ARRAY
   const images = ref([]);
 
-    // Dynamically populate the array with image paths
-    for (let i = 1; i <= 12; i++) {
+  // Dynamically populate the array with image paths
+  for (let i = 1; i <= 12; i++) {
     images.value.push(`/img/trail-img/trail-img${i}.png`);
-    }
+  }
   // GSAP Animations
   class ImageTrail {
     constructor(images) {

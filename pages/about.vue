@@ -79,7 +79,6 @@
                   <ul>
                     <li>Interactive Design (TouchDesigner, Unity, Resolume, MadMapper, Ableton Live)</li>
                     <li>Projection Mapping</li>
-                    <li>3D modeling & animation (Blender)</li>
                     <li>Front-End Development (HTML, CSS, JavaScript)</li>
                     <li>UX/UI Design</li>
                   </ul>
